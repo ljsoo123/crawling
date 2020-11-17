@@ -5,11 +5,6 @@ require("dotenv").config();
     headless: false,
   });
 
-  const delay = (num) => {
-    setTimeout(function () {
-      console.log(10);
-    }, num);
-  };
   const page = await browser.newPage();
 
   await page.goto("https://www.dsm-dms.com/");
